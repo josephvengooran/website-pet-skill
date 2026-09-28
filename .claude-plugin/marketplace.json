@@ -1,18 +1,18 @@
 {
   "name": "website-pet-skill",
   "owner": {
-    "name": "PetMySite",
+    "name": "Interactive Website Pet Skill",
     "email": "support@petmysite.com"
   },
   "metadata": {
-    "description": "PetMySite plugin for Claude Code: install and control the PetMySite website pet."
+    "description": "Website pet plugin for Claude Code: install and control the PetMySite website pet."
   },
   "plugins": [
     {
       "name": "petmysite",
       "source": "./",
-      "description": "Add the PetMySite website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
-      "version": "1.0.0",
+      "description": "Add website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+      "version": "1.0.1",
       "category": "development"
     }
   ]

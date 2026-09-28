@@ -1,7 +1,7 @@
 {
   "name": "petmysite",
-  "version": "1.0.0",
-  "description": "Add the PetMySite website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+  "version": "1.0.1",
+  "description": "Add website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
   "author": {
     "name": "PetMySite",
     "email": "support@petmysite.com",
@@ -14,8 +14,8 @@
   "skills": "./skills",
   "interface": {
     "displayName": "PetMySite",
-    "shortDescription": "Add the PetMySite website pet and control it from code",
-    "longDescription": "Install the PetMySite website pet with the script tag, the @petmysite/react package, Google Tag Manager, WordPress or a site builder, then show bubbles, play animations, hide it on some routes and handle click, petting and right-click events with the JavaScript API or React hooks.",
+    "shortDescription": "Add website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+    "longDescription": "Install the PetMySite website pet with the script tag, the @petmysite/react package, WordPress or a site builder, then show bubbles, play animations, hide it on some routes and handle click, petting and right-click events with the JavaScript API or React hooks.",
     "developerName": "PetMySite",
     "category": "Developer Tools",
     "capabilities": ["Interactive", "Write"],
@@ -27,6 +27,7 @@
     "logo": "./assets/icon.png",
     "defaultPrompt": [
       "Add the PetMySite pet to this Next.js app",
+      "Add the website pet to my website",
       "Celebrate with the pet when a visitor adds to cart",
       "Hide the PetMySite pet on checkout routes"
     ],

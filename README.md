@@ -34,6 +34,12 @@ Ask your agent, for example:
 
 You need a PetMySite website and its public site key (`pms_…`) from the website's **Installation** page. The agent will ask for it or use an environment variable placeholder.
 
+## What it runs and sends
+
+The plugin is instructions only. It has no hooks, MCP servers, commands or scripts that run on install or use, and it sends nothing anywhere. `scripts/validate.mjs` is a maintainer check that you run by hand; the agent never runs it.
+
+The code your agent writes with it loads `https://cdn.petmysite.com/pet.js` in your visitors' browsers, the same script shown on your PetMySite **Installation** page. That script uses no cookies or storage and reports only aggregate counts; see the [PetMySite privacy policy](https://petmysite.com/privacy).
+
 ## Layout
 
 ```text

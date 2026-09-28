@@ -1,7 +1,7 @@
 {
   "name": "petmysite",
-  "version": "1.0.0",
-  "description": "Add the PetMySite website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+  "version": "1.0.1",
+  "description": "Add website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
   "author": {
     "name": "PetMySite",
     "email": "support@petmysite.com",

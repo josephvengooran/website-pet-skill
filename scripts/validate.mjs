@@ -24,7 +24,10 @@ for (const icon of [codex.interface.logo, codex.interface.composerIcon])
 
 const skillsDir = join(root, "skills");
 const docs = [];
-for (const skill of readdirSync(skillsDir)) {
+const skillNames = readdirSync(skillsDir, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name);
+for (const skill of skillNames) {
   const body = read(`skills/${skill}/SKILL.md`);
   const front = body.match(/^---\n([\s\S]*?)\n---\n/);
   check(front, `${skill}: SKILL.md has no frontmatter`);
@@ -37,7 +40,7 @@ for (const skill of readdirSync(skillsDir)) {
     check(existsSync(join(skillsDir, skill, ref[1])), `${skill}: links missing ${ref[1]}`);
   docs.push(body);
   const refs = join(skillsDir, skill, "references");
-  if (existsSync(refs)) for (const file of readdirSync(refs)) docs.push(read(`skills/${skill}/references/${file}`));
+  if (existsSync(refs)) for (const file of readdirSync(refs).filter((f) => f.endsWith(".md"))) docs.push(read(`skills/${skill}/references/${file}`));
 }
 
 // The public API as shipped in pet.js and @petmysite/react 0.2.x.
