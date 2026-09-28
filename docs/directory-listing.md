@@ -22,7 +22,7 @@ Requires a Pro, Max, Team or Enterprise Claude plan (Team/Enterprise: an Owner o
 6. **Review and submit**: keep **GitHub push webhook**, then **Submit for review**. Set up push updates afterwards (needs admin on the repository).
 7. When the version passes, select **Publish**.
 
-Later releases: bump `version` in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` and `.codex-plugin/plugin.json`, run `node scripts/validate.mjs`, and push to `main`.
+Later releases: bump `version` in `package.json`, `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` and `.codex-plugin/plugin.json`, run `node scripts/validate.mjs`, and push to `main`.
 
 ## OpenAI Plugins Directory
 

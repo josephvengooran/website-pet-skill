@@ -1,0 +1,38 @@
+{
+  "name": "website-pet-skill",
+  "version": "1.0.1",
+  "description": "Install the PetMySite skill for Claude Code and Codex in one step: npx website-pet-skill install",
+  "type": "module",
+  "bin": {
+    "website-pet-skill": "cli/index.mjs"
+  },
+  "files": [
+    "cli/index.mjs",
+    "cli/install.mjs",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "prepublishOnly": "node scripts/validate.mjs && node --test"
+  },
+  "keywords": ["petmysite", "website-pet", "claude-code", "codex", "agent-skills", "skill"],
+  "homepage": "https://petmysite.com/help/website-pet-skill/codex-claude-code",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephvengooran/website-pet-skill.git"
+  },
+  "bugs": {
+    "email": "support@petmysite.com"
+  },
+  "author": "PetMySite <support@petmysite.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

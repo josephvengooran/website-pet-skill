@@ -16,6 +16,8 @@ const codexMarket = json(".agents/plugins/marketplace.json");
 
 check(claude.name === codex.name, "plugin names differ between Claude Code and Codex manifests");
 check(claude.version === codex.version, "plugin versions differ between Claude Code and Codex manifests");
+const npmPackage = json("package.json");
+check(npmPackage.version === claude.version, "package.json version differs from the plugin manifests");
 check(claudeMarket.plugins.some((p) => p.name === claude.name && p.version === claude.version),
   "Claude marketplace entry does not match plugin name/version");
 check(codexMarket.plugins.some((p) => p.name === codex.name), "Codex marketplace entry does not match plugin name");
