@@ -1,0 +1,15 @@
+{
+  "name": "petmysite",
+  "version": "1.0.0",
+  "description": "Add the PetMySite website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+  "author": {
+    "name": "PetMySite",
+    "email": "support@petmysite.com",
+    "url": "https://petmysite.com"
+  },
+  "homepage": "https://petmysite.com/help",
+  "repository": "https://github.com/josephvengooran/website-pet-skill",
+  "license": "MIT",
+  "keywords": ["petmysite", "website-pet", "chat-button", "react", "nextjs", "javascript-api", "widget"],
+  "skills": "./skills/"
+}

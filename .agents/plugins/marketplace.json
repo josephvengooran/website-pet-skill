@@ -1,0 +1,20 @@
+{
+  "name": "website-pet-skill",
+  "interface": {
+    "displayName": "PetMySite"
+  },
+  "plugins": [
+    {
+      "name": "petmysite",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

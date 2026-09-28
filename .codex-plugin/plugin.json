@@ -1,0 +1,35 @@
+{
+  "name": "petmysite",
+  "version": "1.0.0",
+  "description": "Add the PetMySite website pet to any website and control it with the JavaScript API or the @petmysite/react package.",
+  "author": {
+    "name": "PetMySite",
+    "email": "support@petmysite.com",
+    "url": "https://petmysite.com"
+  },
+  "homepage": "https://petmysite.com/help",
+  "repository": "https://github.com/josephvengooran/website-pet-skill",
+  "license": "MIT",
+  "keywords": ["petmysite", "website-pet", "chat-button", "react", "nextjs", "javascript-api", "widget"],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "PetMySite",
+    "shortDescription": "Add the PetMySite website pet and control it from code",
+    "longDescription": "Install the PetMySite website pet with the script tag, the @petmysite/react package, Google Tag Manager, WordPress or a site builder, then show bubbles, play animations, hide it on some routes and handle click, petting and right-click events with the JavaScript API or React hooks.",
+    "developerName": "PetMySite",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://petmysite.com",
+    "privacyPolicyURL": "https://petmysite.com/privacy",
+    "termsOfServiceURL": "https://petmysite.com/terms",
+    "brandColor": "#7047EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Add the PetMySite pet to this Next.js app",
+      "Celebrate with the pet when a visitor adds to cart",
+      "Hide the PetMySite pet on checkout routes"
+    ],
+    "screenshots": []
+  }
+}
